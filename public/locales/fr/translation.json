@@ -1,0 +1,163 @@
+{
+  "sidebar": {
+    "admin": "ADMIN",
+    "profileUserAlt": "Utilisateur de profil",
+    "userName": "Aditya Jain",
+    "userRole": "Panneau d'administration",
+    "dashboard": "Tableau de bord",
+    "data": "Données",
+    "manageTeam": "Gérer l'équipe",
+    "contactsInformation": "Informations de contact",
+    "invoicesBalances": "Soldes des factures",
+    "pages": "Pages",
+    "profileForm": "Formulaire de profil",
+    "calendar": "Calendrier",
+    "faqPage": "Page FAQ",
+    "charts": "Graphiques",
+    "barChart": "Diagramme en barres",
+    "pieChart": "Diagramme en secteurs",
+    "lineChart": "Diagramme en lignes",
+    "geographyChart": "Carte géographique"
+  },
+  "dashboard": {
+    "title": "TABLEAU DE BORD",
+    "subtitle": "Bienvenue sur votre tableau de bord",
+    "downloadReports": "Télécharger les rapports",
+    "emailsSent": "E-mails envoyés",
+    "salesObtained": "Ventes obtenues",
+    "newClients": "Nouveaux clients",
+    "trafficReceived": "Trafic reçu",
+    "revenueGenerated": "Revenu généré",
+    "revenueAmount": "$59,342.32",
+    "recentTransactions": "Transactions récentes",
+    "campaign": "Campagne",
+    "campaignRevenue": "$48,352 de revenu généré",
+    "campaignMisc": "Comprend des dépenses et des coûts divers supplémentaires",
+    "salesQuantity": "Quantité de ventes",
+    "geographyTraffic": "Trafic basé sur la géographie"
+  },
+  "team": {
+    "title": "ÉQUIPE",
+    "subtitle": "Gestion des membres de l'équipe",
+    "id": "ID",
+    "name": "Nom",
+    "age": "Âge",
+    "phoneNumber": "Numéro de téléphone",
+    "email": "Email",
+    "accessLevel": "Niveau d'accès",
+    "admin": "Administrateur",
+    "manager": "Gestionnaire",
+    "user": "Utilisateur"
+  },
+  "languages": {
+    "english": "Anglais",
+    "spanish": "Espagnol",
+    "french": "Français",
+    "german": "Allemand",
+    "hindi": "Hindi"
+  },
+
+  "invoices": {
+    "title": "FACTURES",
+    "subtitle": "Liste des soldes de factures",
+    "id": "ID",
+    "name": "Nom",
+    "phoneNumber": "Numéro de téléphone",
+    "email": "Email",
+    "cost": "Coût",
+    "date": "Date",
+    "totalCost": "Coût total"
+  },
+
+  "contacts": {
+    "title": "CONTACTS",
+    "subtitle": "Liste des contacts pour référence future",
+    "id": "ID",
+    "registrarId": "ID du registraire",
+    "name": "Nom",
+    "age": "Âge",
+    "phoneNumber": "Numéro de téléphone",
+    "email": "Email",
+    "address": "Adresse",
+    "city": "Ville",
+    "zipCode": "Code postal"
+  },
+  "form": {
+    "title": "CRÉER UN UTILISATEUR",
+    "subtitle": "Créer un nouveau profil utilisateur",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "email": "E-mail",
+    "contactNumber": "Numéro de contact",
+    "address1": "Adresse 1",
+    "address2": "Adresse 2",
+    "createUser": "Créer un nouvel utilisateur",
+    "required": "obligatoire",
+    "invalidEmail": "Email invalide",
+    "invalidPhone": "Le numéro de téléphone n'est pas valide"
+  },
+  "calendar": {
+    "title": "CALENDRIER",
+    "subtitle": "Page interactive du calendrier complet",
+    "events": "Événements",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer l'événement '{{eventName}}'?",
+    "newEventPrompt": "Veuillez entrer un nouveau titre pour votre événement",
+    "timedEvent": "Événement programmé",
+    "allDayEvent": "Événement de toute la journée",
+    "dateFormat": {
+      "year": "numeric",
+      "month": "short",
+      "day": "numeric"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Page des Questions Fréquemment Posées",
+    "question1": "Quels services proposez-vous?",
+    "answer1": "Nous offrons une large gamme de services, y compris le développement web, le développement d'applications mobiles et le marketing digital. Notre équipe est compétente dans les dernières technologies et tendances pour aider votre entreprise à se développer en ligne.",
+    "question2": "Comment puis-je contacter le support client?",
+    "answer2": "Vous pouvez contacter notre équipe de support client par e-mail à support@ourcompany.com ou nous appeler au (123) 456-7890. Nous sommes disponibles du lundi au vendredi, de 9h à 17h.",
+    "question3": "Quelle est votre politique de remboursement?",
+    "answer3": "Nous offrons un remboursement complet dans les 30 jours suivant l'achat si vous n'êtes pas satisfait de nos services. Veuillez contacter notre équipe de support pour initier une demande de remboursement.",
+    "question4": "Comment mettre à jour les informations de mon compte?",
+    "answer4": "Pour mettre à jour les informations de votre compte, connectez-vous à votre compte et accédez à la page des paramètres du compte. De là, vous pouvez mettre à jour vos informations personnelles, changer votre mot de passe et gérer vos préférences.",
+    "question5": "Proposez-vous des solutions personnalisées?",
+    "answer5": "Oui, nous proposons des solutions personnalisées adaptées à vos besoins spécifiques. Contactez notre équipe commerciale avec vos exigences et nous travaillerons avec vous pour créer une solution répondant aux objectifs de votre entreprise."
+  },
+  "geography": {
+    "title": "Géographie",
+    "subtitle": "Graphique de géographie simple"
+  },
+
+  "barChart": {
+    "title": "Diagramme à Barres",
+    "subtitle": "Diagramme à Barres Simple"
+  },
+
+  "barChartContent": {
+    "hotDog": "Hot Dog",
+    "burger": "Burger",
+    "sandwich": "Sandwich",
+    "kebab": "Kebab",
+    "fries": "Frites",
+    "donut": "Beignet",
+    "axisBottomLegend": "Pays",
+    "axisLeftLegend": "Nourriture"
+  },
+  "searchPlaceholder": "Rechercher...",
+
+  "mockLineDataContent":{
+    "plane": "avion",
+  "helicopter": "hélicoptère",
+  "boat": "bateau",
+  "train": "train",
+  "subway": "métro",
+  "bus": "bus",
+  "car": "voiture",
+  "moto": "moto",
+  "bicycle": "vélo",
+  "horse": "cheval",
+  "skateboard": "planche à roulettes",
+  "others": "autres"
+  }
+}

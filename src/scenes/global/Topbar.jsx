@@ -8,11 +8,14 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import LanguageDropdown from "./LanguageDropdown";
+import { useTranslation } from "react-i18next";
 
 const Topbar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext);
+  const { t } = useTranslation();
 
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
@@ -22,14 +25,16 @@ const Topbar = () => {
         backgroundColor={colors.primary[400]}
         borderRadius="3px"
       >
-        <InputBase sx={{ ml: 2, flex: 1 }} placeholder="Search" />
+        <InputBase sx={{ ml: 2, flex: 1 }} placeholder={t("searchPlaceholder")} />
         <IconButton type="button" sx={{ p: 1 }}>
           <SearchIcon />
         </IconButton>
       </Box>
 
       {/* ICONS */}
-      <Box display="flex">
+      <Box display="flex"
+      gap={0.5}
+      >
         <IconButton onClick={colorMode.toggleColorMode}>
           {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
@@ -37,8 +42,12 @@ const Topbar = () => {
             <LightModeOutlinedIcon />
           )}
         </IconButton>
-        <IconButton>
-          <NotificationsOutlinedIcon />
+      
+       <LanguageDropdown/>
+     
+        <IconButton >
+          <NotificationsOutlinedIcon 
+        />
         </IconButton>
         <IconButton>
           <SettingsOutlinedIcon />

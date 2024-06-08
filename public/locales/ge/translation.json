@@ -1,0 +1,167 @@
+{
+  "sidebar": {
+    "admin": "ADMIN",
+    "profileUserAlt": "Profil-Benutzer",
+    "userName": "Aditya Jain",
+    "userRole": "Admin-Panel",
+    "dashboard": "Armaturenbrett",
+    "data": "Daten",
+    "manageTeam": "Team verwalten",
+    "contactsInformation": "Kontaktinformationen",
+    "invoicesBalances": "Rechnungsbilanzen",
+    "pages": "Seiten",
+    "profileForm": "Profilformular",
+    "calendar": "Kalender",
+    "faqPage": "FAQ-Seite",
+    "charts": "Diagramme",
+    "barChart": "Balkendiagramm",
+    "pieChart": "Kreisdiagramm",
+    "lineChart": "Liniendiagramm",
+    "geographyChart": "Geografisches Diagramm"
+  },
+  "dashboard": {
+    "title": "DASHBOARD",
+    "subtitle": "Willkommen zu Ihrem Dashboard",
+    "downloadReports": "Berichte herunterladen",
+    "emailsSent": "Gesendete E-Mails",
+    "salesObtained": "Erzielte Verkäufe",
+    "newClients": "Neue Kunden",
+    "trafficReceived": "Erhaltener Traffic",
+    "revenueGenerated": "Generierter Umsatz",
+    "revenueAmount": "$59,342.32",
+    "recentTransactions": "Aktuelle Transaktionen",
+    "campaign": "Kampagne",
+    "campaignRevenue": "$48,352 generierter Umsatz",
+    "campaignMisc": "Enthält zusätzliche sonstige Ausgaben und Kosten",
+    "salesQuantity": "Verkaufsmenge",
+    "geographyTraffic": "Geografiebasierter Traffic"
+  },
+  "team": {
+    "title": "TEAM",
+    "subtitle": "Verwaltung der Teammitglieder",
+    "id": "ID",
+    "name": "Name",
+    "age": "Alter",
+    "phoneNumber": "Telefonnummer",
+    "email": "E-Mail",
+    "accessLevel": "Zugriffsebene",
+    "admin": "Administrator",
+    "manager": "Manager",
+    "user": "Benutzer"
+  },
+  "languages": {
+    "english": "Englisch",
+    "spanish": "Spanisch",
+    "french": "Französisch",
+    "german": "Deutsch",
+    "hindi": "Hindi"
+  },
+
+  "invoices": {
+    "title": "RECHNUNGEN",
+    "subtitle": "Liste der Rechnungssalden",
+    "id": "ID",
+    "name": "Name",
+    "phoneNumber": "Telefonnummer",
+    "email": "E-Mail",
+    "cost": "Kosten",
+    "date": "Datum",
+    "totalCost": "Gesamtkosten"
+  },
+  "contacts": {
+    "title": "KONTAKTE",
+    "subtitle": "Liste der Kontakte für zukünftige Referenz",
+    "id": "ID",
+    "registrarId": "Registrierungs-ID",
+    "name": "Name",
+    "age": "Alter",
+    "phoneNumber": "Telefonnummer",
+    "email": "E-Mail",
+    "address": "Adresse",
+    "city": "Stadt",
+    "zipCode": "Postleitzahl"
+  },
+  "form": {
+    "title": "NEUEN BENUTZER ERSTELLEN",
+    "subtitle": "Erstellen Sie ein neues Benutzerprofil",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "contactNumber": "Kontaktnummer",
+    "address1": "Adresse 1",
+    "address2": "Adresse 2",
+    "createUser": "Neuen Benutzer erstellen",
+    "required": "erforderlich",
+    "invalidEmail": "Ungültige E-Mail",
+    "invalidPhone": "Telefonnummer ist ungültig"
+  },
+
+  "calendar": {
+    "title": "KALENDER",
+    "subtitle": "Vollständige interaktive Kalenderseite",
+    "events": "Veranstaltungen",
+    "confirmDelete": "Möchten Sie das Ereignis '{{eventName}}' wirklich löschen?",
+    "newEventPrompt": "Bitte geben Sie einen neuen Titel für Ihr Ereignis ein",
+    "timedEvent": "Geplantes Ereignis",
+    "allDayEvent": "Ganztägiges Ereignis",
+    "dateFormat": {
+      "year": "numeric",
+      "month": "short",
+      "day": "numeric"
+    }
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Seite mit häufig gestellten Fragen",
+    "question1": "Welche Dienstleistungen bieten Sie an?",
+    "answer1": "Wir bieten eine breite Palette von Dienstleistungen an, darunter Webentwicklung, mobile App-Entwicklung und digitales Marketing. Unser Team ist in den neuesten Technologien und Trends geschult, um Ihr Geschäft online zu vergrößern.",
+    "question2": "Wie kann ich den Kundensupport kontaktieren?",
+    "answer2": "Sie können unser Kundensupport-Team per E-Mail unter support@ourcompany.com oder telefonisch unter (123) 456-7890 erreichen. Wir sind von Montag bis Freitag, von 9 Uhr bis 17 Uhr, verfügbar.",
+    "question3": "Wie lautet Ihre Rückerstattungsrichtlinie?",
+    "answer3": "Wir bieten eine vollständige Rückerstattung innerhalb von 30 Tagen nach dem Kauf an, wenn Sie mit unseren Dienstleistungen nicht zufrieden sind. Bitte kontaktieren Sie unser Support-Team, um eine Rückerstattungsanfrage zu starten.",
+    "question4": "Wie aktualisiere ich meine Kontoinformationen?",
+    "answer4": "Um Ihre Kontoinformationen zu aktualisieren, melden Sie sich bei Ihrem Konto an und navigieren Sie zur Kontoeinstellungsseite. Dort können Sie Ihre persönlichen Daten aktualisieren, Ihr Passwort ändern und Ihre Einstellungen verwalten.",
+    "question5": "Bieten Sie maßgeschneiderte Lösungen an?",
+    "answer5": "Ja, wir bieten maßgeschneiderte Lösungen, die auf Ihre spezifischen Bedürfnisse zugeschnitten sind. Kontaktieren Sie unser Vertriebsteam mit Ihren Anforderungen, und wir werden mit Ihnen zusammenarbeiten, um eine Lösung zu erstellen, die Ihren geschäftlichen Zielen entspricht."
+  },
+
+  "geography": {
+    "title": "Geographie",
+    "subtitle": "Einfaches Geographie-Diagramm"
+  },
+
+  "barChart": {
+    "title": "Balkendiagramm",
+    "subtitle": "Einfaches Balkendiagramm"
+  },
+
+  "barChartContent": {
+    "hotDog": "Hot Dog",
+    "burger": "Hamburger",
+    "sandwich": "Sandwich",
+    "kebab": "Kebab",
+    "fries": "Pommes frites",
+    "donut": "Donut",
+    "axisBottomLegend": "Land",
+    "axisLeftLegend": "Essen"
+  },
+  "searchPlaceholder": "Suche...",
+  
+   "mockLineDataContent":{
+    "plane": "Flugzeug",
+    "helicopter": "Hubschrauber",
+    "boat": "Boot",
+    "train": "Zug",
+    "subway": "U-Bahn",
+    "bus": "Bus",
+    "car": "Auto",
+    "moto": "Motorrad",
+    "bicycle": "Fahrrad",
+    "horse": "Pferd",
+    "skateboard": "Skateboard",
+    "others": "Andere"
+   }
+  
+  
+}

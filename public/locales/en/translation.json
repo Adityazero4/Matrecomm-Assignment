@@ -1,0 +1,148 @@
+{
+  "sidebar": {
+    "admin": "ADMIN",
+    "profileUserAlt": "profile-user",
+    "userName": "Aditya Jain",
+    "userRole": "Admin Panel",
+    "dashboard": "Dashboard",
+    "data": "Data",
+    "manageTeam": "Manage Team",
+    "contactsInformation": "Contacts Information",
+    "invoicesBalances": "Invoices Balances",
+    "pages": "Pages",
+    "profileForm": "Profile Form",
+    "calendar": "Calendar",
+    "faqPage": "FAQ Page",
+    "charts": "Charts",
+    "barChart": "Bar Chart",
+    "pieChart": "Pie Chart",
+    "lineChart": "Line Chart",
+    "geographyChart": "Geography Chart"
+  },
+  "dashboard": {
+    "title": "DASHBOARD",
+    "subtitle": "Welcome to your dashboard",
+    "downloadReports": "Download Reports",
+    "emailsSent": "Emails Sent",
+    "salesObtained": "Sales Obtained",
+    "newClients": "New Clients",
+    "trafficReceived": "Traffic Received",
+    "revenueGenerated": "Revenue Generated",
+    "revenueAmount": "$59,342.32",
+    "recentTransactions": "Recent Transactions",
+    "campaign": "Campaign",
+    "campaignRevenue": "$48,352 revenue generated",
+    "campaignMisc": "Includes extra misc expenditures and costs",
+    "salesQuantity": "Sales Quantity",
+    "geographyTraffic": "Geography Based Traffic"
+  },
+  "team": {
+    "title": "TEAM",
+    "subtitle": "Managing the Team Members",
+    "id": "ID",
+    "name": "Name",
+    "age": "Age",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "accessLevel": "Access Level",
+    "admin": "Admin",
+    "manager": "Manager",
+    "user": "User"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish",
+    "french": "French",
+    "german": "German",
+    "hindi": "Hindi"
+  },
+  "invoices": {
+    "title": "INVOICES",
+    "subtitle": "List of Invoice Balances",
+    "id": "ID",
+    "name": "Name",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "cost": "Cost",
+    "date": "Date",
+    "totalCost": "Total Cost"
+  },
+  "contacts": {
+    "title": "CONTACTS",
+    "subtitle": "List of Contacts for Future Reference",
+    "id": "ID",
+    "registrarId": "Registrar ID",
+    "name": "Name",
+    "age": "Age",
+    "phoneNumber": "Phone Number",
+    "email": "Email",
+    "address": "Address",
+    "city": "City",
+    "zipCode": "Zip Code"
+  },
+  "form": {
+    "title": "CREATE USER",
+    "subtitle": "Create a New User Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "contactNumber": "Contact Number",
+    "address1": "Address 1",
+    "address2": "Address 2",
+    "createUser": "Create New User",
+    "required": "required",
+    "invalidEmail": "Invalid email",
+    "invalidPhone": "Phone number is not valid"
+  },
+
+  "calendar": {
+    "title": "CALENDAR",
+    "subtitle": "Full Calendar Interactive Page",
+    "events": "Events",
+    "confirmDelete": "Are you sure you want to delete the event '{{eventName}}'",
+    "newEventPrompt": "Please enter a new title for your event",
+    "timedEvent": "Timed event",
+    "allDayEvent": "All day event",
+    "dateFormat": {
+      "year": "numeric",
+      "month": "short",
+      "day": "numeric"
+    }
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions Page",
+    "question1": "What services do you offer?",
+    "answer1": "We offer a wide range of services including web development, mobile app development, and digital marketing. Our team is skilled in the latest technologies and trends to help your business grow online.",
+    "question2": "How can I contact customer support?",
+    "answer2": "You can reach our customer support team via email at support@ourcompany.com or call us at (123) 456-7890. We are available from Monday to Friday, 9 AM to 5 PM.",
+    "question3": "What is your refund policy?",
+    "answer3": "We offer a full refund within 30 days of purchase if you are not satisfied with our services. Please contact our support team to initiate a refund request.",
+    "question4": "How do I update my account information?",
+    "answer4": "To update your account information, log in to your account and navigate to the account settings page. From there, you can update your personal details, change your password, and manage your preferences.",
+    "question5": "Do you offer custom solutions?",
+    "answer5": "Yes, we offer custom solutions tailored to your specific needs. Contact our sales team with your requirements, and we will work with you to create a solution that meets your business objectives."
+  },
+
+  "geography": {
+    "title": "Geography",
+    "subtitle": "Simple Geography Chart"
+  },
+  "searchPlaceholder": "Search...",
+
+  "mockLineDataContent": {
+    "plane": "plane",
+    "helicopter": "helicopter",
+    "boat": "boat",
+    "train": "train",
+    "subway": "subway",
+    "bus": "bus",
+    "car": "car",
+    "moto": "moto",
+    "bicycle": "bicycle",
+    "horse": "horse",
+    "skateboard": "skateboard",
+    "others": "others"
+  }
+}

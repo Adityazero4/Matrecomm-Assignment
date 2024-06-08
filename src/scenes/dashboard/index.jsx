@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import { mockTransactions } from "../../data/mockData";
@@ -12,16 +13,18 @@ import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
+import { useTranslation } from "react-i18next";
 
 const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const { t } = useTranslation();
 
   return (
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title={t('dashboard.title')} subtitle={t('dashboard.subtitle')} />
 
         <Box>
           <Button
@@ -34,7 +37,7 @@ const Dashboard = () => {
             }}
           >
             <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
+            {t('dashboard.downloadReports')}
           </Button>
         </Box>
       </Box>
@@ -56,7 +59,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="12,361"
-            subtitle="Emails Sent"
+            subtitle={t('dashboard.emailsSent')}
             progress="0.75"
             increase="+14%"
             icon={
@@ -75,7 +78,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="431,225"
-            subtitle="Sales Obtained"
+            subtitle={t('dashboard.salesObtained')}
             progress="0.50"
             increase="+21%"
             icon={
@@ -94,7 +97,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle={t('dashboard.newClients')}
             progress="0.30"
             increase="+5%"
             icon={
@@ -113,7 +116,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="1,325,134"
-            subtitle="Traffic Received"
+            subtitle={t('dashboard.trafficReceived')}
             progress="0.80"
             increase="+43%"
             icon={
@@ -143,14 +146,14 @@ const Dashboard = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Revenue Generated
+                {t('dashboard.revenueGenerated')}
               </Typography>
               <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                $59,342.32
+                {t('dashboard.revenueAmount')}
               </Typography>
             </Box>
             <Box>
@@ -180,7 +183,7 @@ const Dashboard = () => {
             p="15px"
           >
             <Typography color={colors.grey[100]} variant="h5" fontWeight="600">
-              Recent Transactions
+              {t('dashboard.recentTransactions')}
             </Typography>
           </Box>
           {mockTransactions.map((transaction, i) => (
@@ -224,7 +227,7 @@ const Dashboard = () => {
           p="30px"
         >
           <Typography variant="h5" fontWeight="600">
-            Campaign
+            {t('dashboard.campaign')}
           </Typography>
           <Box
             display="flex"
@@ -238,9 +241,9 @@ const Dashboard = () => {
               color={colors.greenAccent[500]}
               sx={{ mt: "15px" }}
             >
-              $48,352 revenue generated
+              {t('dashboard.campaignRevenue')}
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>{t('dashboard.campaignMisc')}</Typography>
           </Box>
         </Box>
         <Box
@@ -253,7 +256,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            {t('dashboard.salesQuantity')}
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
@@ -270,7 +273,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Geography Based Traffic
+            {t('dashboard.geographyTraffic')}
           </Typography>
           <Box height="200px">
             <GeographyChart isDashboard={true} />
