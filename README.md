@@ -243,7 +243,7 @@ src/
 
 ## Deployment
 
-The SmartDash Admin Suite is deployed on Netlify. View the live deployment [here](https://aditya-admin-panel.netlify.app/).
+The SmartDash Admin Suite is deployed on Vercel. View the live deployment [here](https://matrecomm-assignment.vercel.app/).
 
 ## Verification
 
