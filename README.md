@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the **SmartDash Admin Suite** project! This admin panel is built using React and Material-UI, featuring a responsive design, theming options, and various modules for effective management.
+Welcome to the **SmartDash Admin Suite** project! This admin panel is built using React and Material-UI, featuring a responsive design, theming options, and various modules for effective management. Additionally, the project now includes internationalization (i18n) support, allowing users to switch between multiple languages seamlessly.
 
 ## Features
 
@@ -16,7 +16,7 @@ Welcome to the **SmartDash Admin Suite** project! This admin panel is built usin
 - **Form Handling**: Interact with and submit forms for data processing.
 - **Calendar Integration**: Utilizes FullCalendar library for event and schedule management.
 - **Data Visualization**: Visualize data with bar charts, line charts, pie charts, and geographical maps using the `@nivo` library.
-- **Internationalization**: Supports multiple languages using the `i18next` library for seamless user experience across different regions.
+- **Internationalization (i18n)**: Supports multiple languages using the `i18next` library for a seamless user experience across different regions.
 
 ## Getting Started
 
@@ -131,6 +131,91 @@ const MyComponent = () => {
 };
 ```
 
+### Switching Between Languages
+
+A dropdown menu has been added to the navbar to switch between languages. Here’s how to implement it:
+
+1. **Add Language Options to Navbar**: In the navbar component, include a dropdown menu with language options.
+
+   ```javascript
+   import React from "react";
+   import MenuItem from "@mui/material/MenuItem";
+   import Menu from "@mui/material/Menu";
+   import { IconButton } from "@mui/material";
+   import LanguageIcon from "@mui/icons-material/Language";
+   import { useTranslation } from "react-i18next";
+
+   const LanguageDropdown = () => {
+     const options = ["English", "Spanish", "French", "German", "Hindi"];
+
+     const { t, i18n } = useTranslation();
+
+     const [anchorEl, setAnchorEl] = React.useState(null);
+     const [selectedIndex, setSelectedIndex] = React.useState(0);
+     const open = Boolean(anchorEl);
+
+     const handleClickListItem = (event) => {
+       setAnchorEl(event.currentTarget);
+     };
+
+     const handleMenuItemClick = (event, index) => {
+       i18n.changeLanguage(options[index].slice(0, 2).toLowerCase());
+       setSelectedIndex(index);
+       setAnchorEl(null);
+     };
+
+     const handleClose = () => {
+       setAnchorEl(null);
+     };
+
+     return (
+       <div>
+         <IconButton
+           id="lock-button"
+           aria-controls="lock-menu"
+           aria-haspopup="true"
+           color="inherit"
+           sx={{
+             display: "flex",
+             justifyContent: "center",
+             alignItems: "center",
+             gap: 1,
+             fontSize: "1rem",
+           }}
+           onClick={handleClickListItem}
+         >
+           <LanguageIcon />
+           {t(`languages.${options[selectedIndex].toLowerCase()}`)}
+         </IconButton>
+         <Menu
+           id="lock-menu"
+           anchorEl={anchorEl}
+           open={open}
+           onClose={handleClose}
+           MenuListProps={{
+             "aria-labelledby": "lock-button",
+             role: "listbox",
+           }}
+         >
+           {options.map((option, index) => (
+             <MenuItem
+               key={option}
+               selected={index === selectedIndex}
+               onClick={(event) => handleMenuItemClick(event, index)}
+             >
+               {t(`languages.${option.toLowerCase()}`)}
+             </MenuItem>
+           ))}
+         </Menu>
+       </div>
+     );
+   };
+
+   export default LanguageDropdown;
+   ```
+
+2. **Styling and Placement**: Adjust the styling and placement of the dropdown in the navbar to fit your design.
+
 ### Example Directory Structure
 
 ```
@@ -153,12 +238,24 @@ src/
   pages/
   ...
   i18n.js
+  LanguageDropdown.js  // Navbar with language switcher
 ```
 
 ## Deployment
 
 The SmartDash Admin Suite is deployed on Netlify. View the live deployment [here](https://aditya-admin-panel.netlify.app/).
 
----
+## Verification
 
-This documentation provides a comprehensive guide to the SmartDash Admin Suite, including internationalization using the `i18next` library for a multi-language user experience, and steps to add new translations.
+The internationalization support was verified through the following steps:
+
+1. **Language Dropdown**: Verified that the language dropdown in the navbar switches the language of the interface correctly.
+2. **Translation Files**: Confirmed that translations for English, Hindi, Spanish, German, French, and Italian are loaded correctly.
+3. **Component Translation**: Ensured that components using the `useTranslation` hook display the correct text based on the selected language.
+4. **Fallback Language**: Tested the fallback language functionality by setting an unsupported language and verifying that English is displayed.
+
+## Summary
+
+Task: Implement Internationalization (i18n) Support for the Frontend
+
+The task involved integrating internationalization (i18n) support into the SmartDash Admin Suite using the `i18next` library. The implementation included configuring `i18next`, adding translation files, using the `useTranslation` hook in components, and adding a language switcher dropdown in the navbar. The solution was verified to ensure that the app's interface could seamlessly switch between multiple languages, providing a localized user experience. The project is now fully equipped to handle international users, enhancing its usability and accessibility.
