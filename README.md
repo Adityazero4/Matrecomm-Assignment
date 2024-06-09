@@ -250,10 +250,32 @@ The SmartDash Admin Suite is deployed on Vercel. View the live deployment [here]
 The internationalization support was verified through the following steps:
 
 1. **Language Dropdown**: Verified that the language dropdown in the navbar switches the language of the interface correctly.
-<img width="1268" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/1ac15d42-369a-4736-8631-06b966a1e694">
+
+ -**English**
+  <img width="1268" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/1ac15d42-369a-4736-8631- 06b966a1e694">
+
+ -**Language Selector Dropdown**
+  <img width="1280" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/6143b84d-a5c1-41ac-8514- f4db7e769821">
+
+ -**Hindi**
+  <img width="1280" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/dc99c3a5-b018-4851-b6ac-945d799f4663">
+
+ -**Spanish**
+  <img width="1279" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/be68bf29-3a27-41e2-b22c-07e91549249c">
+
+ -**French**
+  <img width="1280" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/590e888b-00dd-478d-9246-9be4dece6671">
+
+ -**German**
+  <img width="1280" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/4e9792d0-5861-4970-9ab2-42d9ac01d8d3">
 
 2. **Translation Files**: Confirmed that translations for English, Hindi, Spanish, German, French, and Italian are loaded correctly.
+
+ -**Translation Files loading Successfully**
+ <img width="1280" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/523c3665-c21b-423a-b6de-715685a956fd">
+
 3. **Component Translation**: Ensured that components using the `useTranslation` hook display the correct text based on the selected language.
+
 4. **Fallback Language**: Tested the fallback language functionality by setting an unsupported language and verifying that English is displayed.
 
 ## Summary
