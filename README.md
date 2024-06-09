@@ -250,6 +250,8 @@ The SmartDash Admin Suite is deployed on Vercel. View the live deployment [here]
 The internationalization support was verified through the following steps:
 
 1. **Language Dropdown**: Verified that the language dropdown in the navbar switches the language of the interface correctly.
+<img width="1268" alt="image" src="https://github.com/Adityazero4/Matrecomm-Assignment/assets/98283712/1ac15d42-369a-4736-8631-06b966a1e694">
+
 2. **Translation Files**: Confirmed that translations for English, Hindi, Spanish, German, French, and Italian are loaded correctly.
 3. **Component Translation**: Ensured that components using the `useTranslation` hook display the correct text based on the selected language.
 4. **Fallback Language**: Tested the fallback language functionality by setting an unsupported language and verifying that English is displayed.
